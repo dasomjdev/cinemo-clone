@@ -182,6 +182,19 @@ button p.profile-management {
   text-decoration: none;
 }
 
+.site-footer{
+  width: 100%;
+}
+
+.site-footer > .container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  max-width: 1440px;
+  width: 100%;
+}
+
 .footer-copyright {
   width: 1312px;
   height: 20px;
