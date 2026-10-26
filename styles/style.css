@@ -55,6 +55,73 @@
   content: " · ";
 }
 
+footer {
+  width: 100%;
+  height: auto;
+  background-color: #101113;
+  box-sizing: border-box;
+  border-top: 1px solid #303237;
+  padding: 40px 64px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footer-link {
+  display: flex;
+  gap: 32px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 100%;
+}
+
+.footer-link a {
+  color: #acaeb3;
+  text-decoration: none;
+}
+
+.site-footer .container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.footer-copyright {
+  width: 1312px;
+  height: 20px;
+  margin: 0;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 11px;
+  color: #7e8289;
+  line-height: 180%;
+}
+
+.payment::after {
+  content: "·";
+  margin: 2px 2px;
+  border: 50%;
+}
+
+.footer-notice {
+  width: 259px;
+  height: 12px;
+  margin: 0;
+  font-family: "inter", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 10px;
+  color: #7e8289;
+  line-height: 100%;
+}
+
 /* Tablet */
 @media (max-width: 1023px) {
   .container {
@@ -91,71 +158,4 @@
   .profile-link {
     display: none;
   }
-}
-
-footer{
-    width: 100%;
-    height: auto;
-    background-color: #101113;
-    box-sizing: border-box;
-    border-top: 1px solid #303237;
-    padding: 40px 64px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-.footer-link {
-    display: flex;
-    gap: 32px;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    font-family: "Noto Sans KR", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 12px;
-    line-height: 100%;
-}
-
-.footer-link a {
-    color: #acaeb3;
-    text-decoration: none;
-}
-
-.site-footer .container {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 20px;
-}
-
-.footer-copyright{
-    width: 1312px;
-    height: 20px;
-    margin: 0;
-    font-family: "Noto Sans KR", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 11px;
-    color: #7e8289;
-    line-height: 180%;
-}
-
-.payment::after{
-    content: "·";
-    margin: 2px 2px;
-    border: 50%;
-}
-
-.footer-notice{
-    width: 259px;
-    height: 12px;
-    margin: 0;
-    font-family: "inter", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 10px;
-    color: #7e8289;
-    line-height: 100%;
 }
