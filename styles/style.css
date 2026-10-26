@@ -223,4 +223,205 @@ footer {
   margin: 0;
   color: #acadb9;
   font-size: 12px;
+body {
+  background-color: #232529;
+  color: #f3f1ed;
+}
+
+.main-banner {
+  background-image: url("../assets/hero-quiet-orbit.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+
+  width: 100%;
+  max-width: 1440px;
+  min-height: 590px;
+  padding: 104px 64px 72px;
+  box-sizing: border-box;
+}
+.banner-label {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  height: 14px;
+  line-height: 14px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0px;
+  color: #f28d77;
+}
+
+.banner-label::before {
+  content: " ";
+  width: 24px;
+  height: 2px;
+  background-color: #f28d77;
+  flex-shrink: 0;
+}
+
+.banner-label span {
+  font-family: "Inter", sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 0.2em;
+  color: #acaeb3;
+}
+
+.film-title {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+  height: 98px;
+  max-width: 540px;
+}
+
+.korean-title {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 77px;
+  letter-spacing: -0.02em;
+  color: #f3f1ed;
+}
+
+.english-title {
+  font-family: "Inter", sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 13px;
+  margin: 0;
+  color: #acaeb3;
+}
+
+.film-metadata {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  height: 14px;
+  margin: 0;
+}
+
+.film-metadata span:first-child {
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  color: #acaeb3;
+}
+
+.film-metadata span:nth-child(2) {
+  font-family: "Inter", sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 12px;
+  color: #acaeb3;
+}
+
+.film-metadata span:nth-child(3) {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 0;
+  color: #acaeb3;
+}
+
+.synopsis {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.85;
+  letter-spacing: 0;
+  color: #d2d3d5;
+  max-width: 540px;
+  height: 60px;
+  margin: 0;
+}
+
+.film-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  height: 48px;
+}
+
+.banner-content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 540px;
+}
+
+.movie-button {
+  box-sizing: border-box;
+  background-color: #f28d77;
+  border-radius: 4px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 151px;
+  height: 48px;
+  padding: 0 22px;
+
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0;
+  color: #241512;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+.wishlist-button {
+  box-sizing: border-box;
+  background-color: #232529;
+  border-radius: 4px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 109px;
+  height: 48px;
+  padding: 0 22px;
+
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0;
+  color: #f3f1ed;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+.banner-caption {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  gap: 8px;
+  right: 64px;
+  bottom: 72px;
+
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: right;
+  line-height: normal;
+  letter-spacing: 0;
+  color: #f3f1ed;
+}
+
+.banner-caption small {
+  font-family: "inter", sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.2em;
+  color: #acaeb3;
 }
