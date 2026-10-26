@@ -136,28 +136,29 @@ footer {
     padding: 24px;
     align-items: flex-start;
   }
-  .container {
-    padding: 0;
-  }
-  .header-left {
-    display: block;
-  }
-  .service-list {
-    padding-top: 20px;
-    justify-content: flex-start;
-  }
-  .service-list li {
-    flex-shrink: 0;
-  }
-  .service-list li a {
-    white-space: nowrap;
-  }
-  .header-right {
-    align-items: flex-start;
-  }
-  .profile-link {
-    display: none;
-  }
+}
+.container {
+  padding: 0;
+}
+.header-left {
+  display: block;
+}
+.service-list {
+  padding-top: 20px;
+  justify-content: flex-start;
+}
+.service-list li {
+  flex-shrink: 0;
+}
+.service-list li a {
+  white-space: nowrap;
+}
+.header-right {
+  align-items: flex-start;
+}
+.profile-link {
+  display: none;
+}
 .browse-content {
   max-width: 1440px;
   margin: 100px;
