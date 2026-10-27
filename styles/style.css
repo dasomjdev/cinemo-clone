@@ -58,6 +58,9 @@ body {
 .meta-list li:not(:last-child)::after {
   content: " · ";
 }
+
+.site-footer {
+}
 /* header 헤더 끝 */
 
 /* mypage - content */
@@ -151,11 +154,7 @@ button p.profile-management {
 .site-footer {
   width: 100%;
   border-top: 1px solid #303237;
-  /* background-color: #101113; */
-}
-.footer-container {
-  width: 100%;
-  max-width: 1440px;
+  padding: 40px 64px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -224,23 +223,6 @@ button p.profile-management {
   font-size: 10px;
   color: #7e8289;
   line-height: 100%;
-}
-/* footer 푸터 끝*/
-
-.title h2 {
-  font-family: "Noto Sans KR", sans-serif;
-  font-size: 64px;
-  color: #f3f1ed;
-  font-style: bold;
-}
-.title p {
-  font-family: inter;
-  font-size: 11px;
-  color: #acaeb3;
-  font-style: regular;
-}
-.title ul {
-  display: flex;
 }
 
 /* Tablet */
