@@ -115,10 +115,6 @@ body {
   border: 1px solid #fff;
 }
 /* profile 프로필 선택 */
-.project-note {
-  font-size: 11px;
-  color: #7e8289;
-}
 .profile-selection {
   width: 1440px;
   height: 724px;
@@ -148,6 +144,12 @@ button p.profile-management {
   font-weight: 800;
   color: #f3f1ed;
 }
+.project-note {
+  text-align: center;
+  font-size: 11px;
+  color: #7e8289;
+}
+
 /* footer 푸터 */
 .site-footer {
   width: 100%;
