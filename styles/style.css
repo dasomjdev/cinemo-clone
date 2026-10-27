@@ -116,10 +116,8 @@ body {
 }
 /* profile 프로필 선택 */
 .project-note {
-  color: #7e8289;
-}
-.project-note.top {
   font-size: 11px;
+  color: #7e8289;
 }
 .profile-selection {
   width: 1440px;
@@ -131,12 +129,12 @@ body {
   color: #f28d77;
 }
 h2.page-title {
-  font-size: 15px;
+  font-size: 40px;
   font-weight: 800;
-  color: #acaeb3;
+  color: #f3f1ed;
 }
 p.description {
-  font-size: 40px;
+  font-size: 15px;
   color: #f3f1ed;
 }
 .profile-name {
@@ -225,6 +223,71 @@ button p.profile-management {
   line-height: 100%;
 }
 
+.browse-content {
+  max-width: 1440px;
+  margin: 100px;
+  padding: 32px 24px;
+  color: #f3f1ed;
+}
+.collection {
+  width: 100%;
+  margin: auto;
+  padding: 20px;
+}
+
+.section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+.section-heading h2 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 700;
+}
+.section-heading p {
+  margin: 4px 0 0;
+  color: #acadb9;
+  font-size: 13px;
+}
+.section-heading > a {
+  flex-shrink: 0;
+  color: #acadb9;
+  font-size: 12px;
+}
+
+.list {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 20px;
+}
+.card {
+  min-width: 0;
+}
+.card a {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+.card img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.card h3 {
+  margin: 10px 0 2px;
+  font-size: 15px;
+}
+.card p {
+  margin: 0;
+  color: #acadb9;
+  font-size: 12px;
+}
+
 /* Tablet */
 @media (max-width: 1023px) {
   .container {
@@ -261,108 +324,11 @@ button p.profile-management {
   .profile-link {
     display: none;
   }
-  .browse-content {
-    max-width: 1440px;
-    margin: 0 auto;
-    padding: 32px 24px;
-    color: #f3f1ed;
-    background-color: #101113;
-  }
-  /* background-color: #101113; */
-
-  .collection {
-    margin-bottom: 48px;
-  }
-  /* background-color: #101113; */
-
-  /* 제목과 우측 링크 */
-  .section-heading {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 16px;
-    margin-bottom: 20px;
-  }
-
-  .section-heading h2 {
-    margin: 0;
-    font-size: 24px;
-    font-weight: 700;
-  }
-
-  .section-heading p {
-    margin: 4px 0 0;
-    color: #f3f1ed;
-    font-size: 13px;
-  }
-
-  .section-heading > a {
-    flex-shrink: 0;
-    color: #acadb9;
-    font-size: 12px;
-  }
-
-  /* 영화 카드 4개 가로 배치 */
-  .movie-list {
-    display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 20px;
-  }
-
-  .movie-card {
-    min-width: 0;
-  }
-
-  .movie-card a {
-    display: block;
-    color: inherit;
-    text-decoration: none;
-  }
-
-  .movie-card img {
-    display: block;
-    width: 100%;
-    aspect-ratio: 16 / 9;
-    object-fit: cover;
-    border-radius: 5px;
-  }
-
-  .movie-card h3 {
-    margin: 10px 0 2px;
-    font-size: 15px;
-  }
-
-  .movie-card p {
-    margin: 0;
-    color: #acadb9;
-    font-size: 12px;
-  }
 }
-.title h2 {
-  font-family: "Noto Sans KR", sans-serif;
-  font-size: 64px;
-  color: #f3f1ed;
-  font-style: bold;
-}
-.title p {
-  font-family: inter;
-  font-size: 11px;
-  color: #f3f1ed;
-  font-style: regular;
-}
-.title ul {
-  display: flex;
-}
-
-<<<<<<< HEAD
+/* Mobile end */
 .my-content {
   background-color: #101113;
   color: #f3f1ed;
-=======
-my-content {
-  background-color: #101113;
-  color: #f3f3f3;
->>>>>>> 213a996 (index mypage 컨텐츠 수정및 css수정)
   padding: 24px;
 }
 
@@ -370,78 +336,46 @@ my-content {
   margin-bottom: 30px;
 }
 
-<<<<<<< HEAD
 .my-content .title {
-=======
-.my-content .row-title {
->>>>>>> 213a996 (index mypage 컨텐츠 수정및 css수정)
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 15px;
 }
 
-<<<<<<< HEAD
 .my-content .title h2 {
-=======
-.my-content .row-title h2 {
->>>>>>> 213a996 (index mypage 컨텐츠 수정및 css수정)
   font-size: 20px;
   margin: 0;
 }
 
-<<<<<<< HEAD
 .my-content .title span {
-=======
-.my-content .row-title span {
->>>>>>> 213a996 (index mypage 컨텐츠 수정및 css수정)
   font-size: 11px;
   color: #f3f1ed;
 }
 
-<<<<<<< HEAD
 .my-content .list {
-=======
-.my-content .movie-list {
->>>>>>> 213a996 (index mypage 컨텐츠 수정및 css수정)
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 16px;
 }
 
-<<<<<<< HEAD
 .my-content .card img {
-=======
-.my-content .movie-card img {
->>>>>>> 213a996 (index mypage 컨텐츠 수정및 css수정)
   width: 100%;
   aspect-ratio: 16 / 9;
   object-fit: cover;
   display: block;
 }
 
-<<<<<<< HEAD
 .my-content .card:hover img {
   opacity: 0.8;
 }
 
 .my-content .card h3 {
-=======
-.my-content .movie-card:hover img {
-  opacity: 0.8;
-}
-
-.my-content .movie-card h3 {
->>>>>>> 213a996 (index mypage 컨텐츠 수정및 css수정)
   font-size: 14px;
   margin: 8px 0 4px;
 }
 
-<<<<<<< HEAD
 .my-content .card p {
-=======
-.my-content .movie-card p {
->>>>>>> 213a996 (index mypage 컨텐츠 수정및 css수정)
   font-size: 11px;
   color: #f3f1ed;
   margin: 0;
@@ -450,35 +384,19 @@ my-content {
 .account-settings h2 {
   font-size: 20px;
   margin-bottom: 10px;
-<<<<<<< HEAD
 }
 
 .setting {
-=======
-  color: #f3f1ed;
-}
-
-.setting-row {
->>>>>>> 213a996 (index mypage 컨텐츠 수정및 css수정)
   display: grid;
   grid-template-columns: 100px 1fr 40px;
   gap: 12px;
   align-items: center;
   padding: 16px 0;
-<<<<<<< HEAD
   border-bottom: 1px solid #303237;
   font-size: 13px;
 }
 
 .setting a {
-=======
-  border-bottom: 1px solid #f3f1ed;
-  font-size: 13px;
-  color: #f3f1ed;
-}
-
-.setting-row a {
->>>>>>> 213a996 (index mypage 컨텐츠 수정및 css수정)
   color: #f28d77;
   text-decoration: none;
   text-align: right;
