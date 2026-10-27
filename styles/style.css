@@ -58,6 +58,9 @@ body {
 .meta-list li:not(:last-child)::after {
   content: " · ";
 }
+
+.site-footer {
+}
 /* header 헤더 끝 */
 
 /* mypage - content */
@@ -149,11 +152,7 @@ button p.profile-management {
 .site-footer {
   width: 100%;
   border-top: 1px solid #303237;
-  /* background-color: #101113; */
-}
-.footer-container {
-  width: 100%;
-  max-width: 1440px;
+  padding: 40px 64px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -178,6 +177,19 @@ button p.profile-management {
 .footer-link a {
   color: #acaeb3;
   text-decoration: none;
+}
+
+.site-footer {
+  width: 100%;
+}
+
+.site-footer > .container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  max-width: 1440px;
+  width: 100%;
 }
 
 .footer-copyright {
@@ -209,23 +221,6 @@ button p.profile-management {
   font-size: 10px;
   color: #7e8289;
   line-height: 100%;
-}
-/* footer 푸터 끝*/
-
-.title h2 {
-  font-family: "Noto Sans KR", sans-serif;
-  font-size: 64px;
-  color: #f3f1ed;
-  font-style: bold;
-}
-.title p {
-  font-family: inter;
-  font-size: 11px;
-  color: #acaeb3;
-  font-style: regular;
-}
-.title ul {
-  display: flex;
 }
 
 .browse-content {
@@ -331,3 +326,96 @@ button p.profile-management {
   }
 }
 /* Mobile end */
+.my-content {
+  background-color: #101113;
+  color: #f3f1ed;
+  padding: 24px;
+}
+
+.favorite-content {
+  margin-bottom: 30px;
+}
+
+.my-content .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.my-content .title h2 {
+  font-size: 20px;
+  margin: 0;
+}
+
+.my-content .title span {
+  font-size: 11px;
+  color: #f3f1ed;
+}
+
+.my-content .list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.my-content .card img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  display: block;
+}
+
+.my-content .card:hover img {
+  opacity: 0.8;
+}
+
+.my-content .card h3 {
+  font-size: 14px;
+  margin: 8px 0 4px;
+}
+
+.my-content .card p {
+  font-size: 11px;
+  color: #f3f1ed;
+  margin: 0;
+}
+
+.account-settings h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.setting {
+  display: grid;
+  grid-template-columns: 100px 1fr 40px;
+  gap: 12px;
+  align-items: center;
+  padding: 16px 0;
+  border-bottom: 1px solid #303237;
+  font-size: 13px;
+}
+
+.setting a {
+  color: #f28d77;
+  text-decoration: none;
+  text-align: right;
+}
+
+.setting-note {
+  font-size: 11px;
+  color: #f3f1ed;
+  margin-top: 16px;
+}
+
+@media (max-width: 768px) {
+  .my-content .movie-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .setting-row {
+    grid-template-columns: 75px 1fr 35px;
+    gap: 8px;
+    font-size: 11px;
+  }
+}
