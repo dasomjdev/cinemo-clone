@@ -113,10 +113,8 @@ body {
 }
 /* profile 프로필 선택 */
 .project-note {
-  color: #7e8289;
-}
-.project-note.top {
   font-size: 11px;
+  color: #7e8289;
 }
 .profile-selection {
   width: 1440px;
@@ -128,12 +126,12 @@ body {
   color: #f28d77;
 }
 h2.page-title {
-  font-size: 15px;
+  font-size: 40px;
   font-weight: 800;
-  color: #acaeb3;
+  color: #f3f1ed;
 }
 p.description {
-  font-size: 40px;
+  font-size: 15px;
   color: #f3f1ed;
 }
 .profile-name {
@@ -230,6 +228,71 @@ button p.profile-management {
   display: flex;
 }
 
+.browse-content {
+  max-width: 1440px;
+  margin: 100px;
+  padding: 32px 24px;
+  color: #f3f1ed;
+}
+.collection {
+  width: 100%;
+  margin: auto;
+  padding: 20px;
+}
+
+.section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+.section-heading h2 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 700;
+}
+.section-heading p {
+  margin: 4px 0 0;
+  color: #acadb9;
+  font-size: 13px;
+}
+.section-heading > a {
+  flex-shrink: 0;
+  color: #acadb9;
+  font-size: 12px;
+}
+
+.list {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 20px;
+}
+.card {
+  min-width: 0;
+}
+.card a {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+.card img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.card h3 {
+  margin: 10px 0 2px;
+  font-size: 15px;
+}
+.card p {
+  margin: 0;
+  color: #acadb9;
+  font-size: 12px;
+}
+
 /* Tablet */
 @media (max-width: 1023px) {
   .container {
@@ -266,72 +329,5 @@ button p.profile-management {
   .profile-link {
     display: none;
   }
-  .browse-content {
-    max-width: 1440px;
-    margin: 100px;
-    padding: 32px 24px;
-    color: #f3f1ed;
-    /* background-color: #101113; */
-  }
-  .collection {
-    /* background-color: #101113; */
-    width: 100%;
-    margin: auto;
-    padding: 20px;
-  }
-
-  .section-heading {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 16px;
-    margin-bottom: 20px;
-  }
-  .section-heading h2 {
-    margin: 0;
-    font-size: 24px;
-    font-weight: 700;
-  }
-  .section-heading p {
-    margin: 4px 0 0;
-    color: #acadb9;
-    font-size: 13px;
-  }
-  .section-heading > a {
-    flex-shrink: 0;
-    color: #acadb9;
-    font-size: 12px;
-  }
-
-  .list {
-    display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 20px;
-  }
-  .card {
-    min-width: 0;
-  }
-  .card a {
-    display: block;
-    color: inherit;
-    text-decoration: none;
-  }
-  .card img {
-    display: block;
-    width: 100%;
-    aspect-ratio: 16 / 9;
-    object-fit: cover;
-    border-radius: 5px;
-  }
-  .card h3 {
-    margin: 10px 0 2px;
-    font-size: 15px;
-  }
-  .card p {
-    margin: 0;
-    color: #acadb9;
-    font-size: 12px;
-  }
 }
 /* Mobile end */
-/* tablet 위에 CSS 작성해주세요 */
