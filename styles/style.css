@@ -17,10 +17,22 @@ body {
   justify-content: space-between;
   margin: 0 auto;
 }
+.header-container,
+.intro-section,
+.mypage-content,
+.footer-container {
+  padding: 0 40px;
+}
 .header-left {
   display: flex;
   justify-content: flex-start;
   gap: 54px;
+}
+.header-logo,
+.user-profile,
+.profile-change-button,
+.profile-button-edit {
+  cursor: pointer;
 }
 .service-list {
   display: flex;
@@ -232,8 +244,7 @@ p.plus-label {
 
 .editorial-quote,
 .collection-description {
-  display: flex;
-  justify-content: flex-end;
+  text-align: right;
 }
 .editorial-quote {
   color: #f3f1ed;
@@ -245,16 +256,16 @@ p.plus-label {
 }
 
 /*브라우저 컨텐츠*/
-.mypage-content {
+.my-cinemo-content {
   display: flex;
   flex-direction: column;
-
+  gap: 48px;
   padding: 56px 0 64px 0;
 }
 
 .page-introduction {
   width: 100%;
-  max-width: 1312px;
+  max-width: 1440px;
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -273,24 +284,78 @@ p.plus-label {
   font-size: 15px;
   color: #acaeb3;
 }
+
+/* 프로필 패널 */
 .user-profile-panel {
   width: 100%;
-  max-width: 1312px;
+  max-width: 1440px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin: 0 auto;
   padding: 32px;
   background-color: #1a1c1f;
+  border-radius: 4px;
 }
 .profile-information {
-  padding: 32px;
+  display: flex;
+  align-items: center;
 }
-.saved-content {
-  width: 1312px;
-  height: 275px;
-  margin: 0 auto;
-  border: 1px solid #fff;
+.user-details {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
+.profile-heading {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+h3.profile-name {
+  font-size: 28px;
+  color: #f3f1ed;
+}
+p.profile-badge {
+  font-size: 11px;
+  color: #f28d77;
+}
+p.personal-caption {
+  font-size: 13px;
+  color: #acaeb3;
+}
+p.member-since {
+  font-size: 11px;
+  color: #7e8289;
+}
+
+.profile-change {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.membership-date {
+  display: none;
+  font-size: 11px;
+  color: #7e8289;
+}
+.profile-change-button {
+  height: 48px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  padding: 0 22px;
+  border: 1px solid #303237;
+  border-radius: 4px;
+}
+.profile-label {
+  color: #f3f1ed;
+  font-size: 14px;
+}
+
+/* 계정설정 */
 .account-settings {
-  width: 1312px;
+  width: 100%;
+  max-width: 1440px;
   height: 353px;
   margin: 0 auto;
 }
@@ -338,16 +403,53 @@ p.description {
 .profile-description {
   font-size: 11px;
 }
-.profile-card {
-  position: relative;
-  display: block;
+.profile-avatar-admin {
+  width: 152px;
+  height: 152px;
+  background: url("../assets/images/avatar-admin.png") center / cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profile-avatar-master {
+  width: 152px;
+  height: 152px;
+  background: url("../assets/images/avatar-master.png") center / cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profile-avatar-user {
+  width: 152px;
+  height: 152px;
+  background: url("../assets/images/avatar-user.png") center / cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profile-avatar-guest {
+  width: 152px;
+  height: 152px;
+  background: url("../assets/images/avatar-guest.png") center / cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.avatar-main-text {
+  font-size: 72px;
+  color: #f3f1ed;
+}
+.profile-avatar-spell {
+  width: 88px;
+  height: 88px;
+  background: url("../assets/images/avatar-admin.png") center / cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 28px;
 }
 .avatar-text {
-  position: absolute;
-  top: 76px;
-  left: 76px;
-  transform: translate(-50%, -50%);
-  font-size: 72.96px;
+  font-size: 42px;
   color: #f3f1ed;
 }
 .profile-sub-name {
@@ -365,7 +467,7 @@ p.description {
   font-size: 11px;
   color: #acaeb3;
 }
-button.profile-button {
+.profile-button-edit {
   height: 48px;
   display: flex;
   align-items: center;
@@ -374,7 +476,7 @@ button.profile-button {
   border: 1px solid #303237;
   border-radius: 4px;
 }
-button p.profile-management {
+p.profile-management {
   font-size: 14px;
   font-weight: 800;
   color: #f3f1ed;
@@ -390,7 +492,6 @@ p.project-note {
   max-width: 1440px;
   position: relative;
   padding: 40px 64px;
-  border-top: 1px solid #303237;
   padding: 40px 0;
   display: flex;
   flex-direction: column;
@@ -426,7 +527,6 @@ p.project-note {
   margin: 0;
   padding: 0;
   list-style: none;
-  font-family: "Noto Sans KR", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 12px;
@@ -452,12 +552,9 @@ p.project-note {
 }
 
 .footer-copyright {
-  width: 1312px;
+  width: 1440px;
   height: 20px;
   margin: 0;
-  font-family: "Noto Sans KR", sans-serif;
-  font-weight: 400;
-  font-style: normal;
   font-size: 11px;
   color: #7e8289;
   line-height: 180%;
@@ -474,19 +571,22 @@ p.project-note {
   width: 259px;
   height: 12px;
   margin: 0;
-  font-family: "inter", sans-serif;
-  font-weight: 400;
-  font-style: normal;
   font-size: 10px;
   color: #7e8289;
   line-height: 100%;
 }
 
 /* 콘텐츠 전체 영역 */
-.content-section {
+.mypage-content {
   max-width: 1440px;
   margin: 0 auto;
   color: #f3f1ed;
+}
+.mypage-content:nth-child(2) {
+  margin-bottom: 48px;
+}
+.mypage-content:nth-child(3) {
+  margin-bottom: 64px;
 }
 .collection {
   margin-bottom: 48px;
@@ -524,17 +624,14 @@ p.project-note {
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 20px;
 }
-
 .movie-card {
   min-width: 0;
 }
-
 .movie-card a {
   display: block;
   color: inherit;
   text-decoration: none;
 }
-
 .movie-card img {
   display: block;
   width: 100%;
@@ -542,12 +639,6 @@ p.project-note {
   object-fit: cover;
   border-radius: 5px;
 }
-
-.movie-card h3 {
-  margin: 10px 0 2px;
-  font-size: 15px;
-}
-
 .movie-metadata {
   display: flex;
   align-items: center;
@@ -574,15 +665,8 @@ p.project-note {
 
 .favorite-content {
   width: 100%;
-  max-width: 1312px;
+  max-width: 1440px;
   margin: 0 auto;
-  /* margin-bottom: 30px; */
-}
-
-.content-section .row-title {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .favorite-content .row-title {
@@ -595,6 +679,7 @@ p.project-note {
 .row-title h2 {
   font-size: 20px;
   font-weight: bold;
+  color: #f3f1ed;
 }
 
 .row-title span {
@@ -627,6 +712,7 @@ p.project-note {
 .movie-card h3 {
   font-size: 14px;
   margin: 8px 0 4px;
+  color: #f3f1ed;
 }
 
 .movie-card p {
@@ -636,8 +722,9 @@ p.project-note {
 }
 
 .account-settings h2 {
-  font-size: 20px;
   margin-bottom: 10px;
+  font-size: 20px;
+  color: #f3f1ed;
 }
 
 .setting-row {
@@ -684,59 +771,8 @@ p.project-note {
   color: #f3f1ed;
 }
 
-.my-content {
-  background-color: #101113;
-  color: #f3f1ed;
-  padding: 24px;
-}
-
 .favorite-content {
   margin-bottom: 30px;
-}
-
-.my-content .title {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 15px;
-}
-
-.my-content .title h2 {
-  font-size: 20px;
-  margin: 0;
-}
-
-.my-content .title span {
-  font-size: 11px;
-  color: #f3f1ed;
-}
-
-.my-content .list {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 16px;
-}
-
-.my-content .card img {
-  width: 100%;
-  aspect-ratio: 16 / 9;
-  object-fit: cover;
-  display: block;
-}
-
-.my-content .card:hover img {
-  opacity: 0.8;
-}
-
-.my-content .card h3 {
-  font-size: 14px;
-  margin: 8px 0 4px;
-}
-
-.my-content .card p {
-  font-size: 11px;
-  color: #f3f1ed;
-  margin: 0;
 }
 
 .account-settings h2 {
