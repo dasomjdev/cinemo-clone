@@ -11,13 +11,12 @@ body {
   text-align: center;
   /* background-color: #101113; */
 }
-.container {
+.header-container {
   width: 100%;
   max-width: 1440px;
-  margin: 0 auto;
-  padding: 0 64px;
   display: flex;
   justify-content: space-between;
+  margin: 0 auto;
 }
 .header-left {
   display: flex;
@@ -175,10 +174,11 @@ body {
   gap: 10px;
 }
 .film-actions button {
+  height: 48px;
   display: flex;
   align-items: center;
   gap: 12px;
-  padding: 22px;
+  padding: 0 22px;
   border-radius: 4px;
   font-weight: bold;
 }
@@ -250,7 +250,7 @@ p.plus-label {
   display: flex;
   flex-direction: column;
   gap: 48px;
-  padding: 56px 64px 64px 64px;
+  padding: 56px 24px 64px 24px;
   color: #fff;
 }
 .page-introduction {
@@ -386,9 +386,9 @@ p.project-note {
   color: #7e8289;
 }
 
-/* footer 푸터 */
 .site-footer {
   width: 100%;
+  max-width: 1440px;
   border-top: 1px solid #303237;
   padding: 40px 64px;
   display: flex;
@@ -469,7 +469,6 @@ p.project-note {
   color: #7e8289;
   line-height: 100%;
 }
-/* footer 푸터 끝*/
 
 /* 콘텐츠 전체 영역 */
 .browse-content {
@@ -478,13 +477,10 @@ p.project-note {
   padding: 32px 24px;
   color: #f3f1ed;
 }
-
-/* 콘텐츠 목록 사이 간격 */
 .collection {
   margin-bottom: 48px;
 }
 
-/* 제목과 우측 링크 */
 .section-heading {
   display: flex;
   justify-content: space-between;
@@ -551,7 +547,7 @@ p.project-note {
   width: 100%;
   max-width: 1312px;
   margin: 0 auto;
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
 }
 
 .row-title {
