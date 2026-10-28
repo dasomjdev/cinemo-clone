@@ -9,7 +9,6 @@ body {
   align-items: center;
   justify-content: space-between;
   text-align: center;
-  /* background-color: #101113; */
 }
 .header-container {
   width: 100%;
@@ -82,7 +81,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  padding: 104px 64px 72px 64px;
+  padding: 104px 0 72px 0;
 }
 
 .main-content {
@@ -249,8 +248,8 @@ p.plus-label {
 .mypage-content {
   display: flex;
   flex-direction: column;
-  gap: 48px;
-  padding: 56px 24px 64px 24px;
+
+  padding: 56px 0 64px 0;
 }
 
 .page-introduction {
@@ -392,6 +391,8 @@ p.project-note {
   border-top: none;
   position: relative;
   padding: 40px 64px;
+  border-top: 1px solid #303237;
+  padding: 40px 0;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
