@@ -251,10 +251,8 @@ p.plus-label {
   flex-direction: column;
   gap: 48px;
   padding: 56px 24px 64px 24px;
- 
-main
-  color: #fff;
 }
+
 .page-introduction {
   width: 100%;
   max-width: 1312px;
