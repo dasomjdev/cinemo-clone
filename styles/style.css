@@ -291,18 +291,17 @@ body {
   color: #f3f1ed;
 }
 
-.main-featured-story {
-  background-image: url("../assets/hero-quiet-orbit.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  position: relative;
-
+.intro-section {
   width: 100%;
   max-width: 1440px;
-  min-height: 590px;
-  padding: 104px 64px 72px;
-  box-sizing: content-box;
+  height: 590px;
+  margin: 0 auto;
+}
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 104px 64px 72px 64px;
 }
 
 .main-content {
@@ -312,80 +311,101 @@ body {
   width: 540px;
   height: 330px;
 }
-
 .editorial-label {
   display: flex;
   flex-direction: row;
   gap: 12px;
-  height: 14px;
-  width: 157px;
-  box-sizing: border-box;
-  padding: 0 0 24px 0;
+  align-items: center;
+}
+.collection-label::before {
+  display: inline-block;
+  content: "";
+  width: 24px;
+  height: 2px;
+  background-color: #f28d77;
+  margin-right: 12px;
 }
 .collection-label {
-  font-family: "Noto Sans KR", sans-serif;
   font-size: 12px;
   font-style: medium;
   color: #f28d77;
+  display: inline-flex;
+  align-items: center;
 }
 .collection-number {
-  font-family: "Noto Sans KR", sans-serif;
   font-size: 10px;
   color: #acaeb3;
 }
+
+.film-metadata {
+  width: 218px;
+  display: flex;
+  justify-content: space-between;
+}
+.film-metadata li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .title h2 {
-  font-family: "Noto Sans KR", sans-serif;
   font-size: 64px;
   color: #f3f1ed;
   font-style: bold;
-  padding: 8px 0 8px 0;
 }
 .english-title {
-  font-family: "Inter", sans-serif;
   font-size: 11px;
   color: #acaeb3;
   font-style: regular;
-  padding: 0 0 8px 0;
-}
-ul {
-  display: flex;
 }
 .year-and-genre {
   font-size: 12px;
   color: #acaeb3;
-  padding: 12px 12px 0 0;
-  box-sizing: content-box;
-  width: 120px;
-  height: 14px;
+}
+.year-and-genre::after {
+  display: inline-block;
+  content: "";
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: #acaeb3;
+  margin-left: 8px;
 }
 .age-rating {
-  font-family: "Inter", sans-serif;
   font-size: 10px;
-  font-weight: 400;
-  line-height: 14px;
   color: #acaeb3;
-  width: 18px;
-  height: 12px;
-  padding: 14px 0 0 24px;
 }
 .duration {
-  font-family: "Noto Sans KR", sans-serif;
   font-size: 12px;
-  font-weight: 500;
-  line-height: 14px;
   color: #acaeb3;
-  padding: 14px 0 0 24px;
 }
+
 .synopsis {
-  font-family: "Noto Sans KR", sans-serif;
   font-size: 16px;
-  font-weight: 400;
   line-height: 1.85;
-  letter-spacing: 0;
   color: #d2d3d5;
   width: 540px;
-  height: 60px;
-  margin: 0;
+}
+
+.film-actions button {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 22px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+.film-actions button:first-child {
+  background-color: #f28d77;
+}
+.film-actions button:last-child {
+  background-color: #232529;
+}
+p.up-right-label {
+  color: #241512;
+}
+
+p.plus-label {
+  color: #f3f1ed;
 }
 
 .main-label {
@@ -394,7 +414,6 @@ ul {
   gap: 12px;
   height: 14px;
   line-height: 14px;
-  font-family: "Noto Sans KR", sans-serif;
   font-size: 12px;
   font-weight: 500;
   letter-spacing: 0px;
@@ -409,7 +428,6 @@ ul {
 }
 
 .main-label span {
-  font-family: "Inter", sans-serif;
   font-size: 10px;
   font-weight: 400;
   letter-spacing: 0.2em;
@@ -425,82 +443,20 @@ ul {
   max-width: 540px;
 }
 
-.film-actions {
+.editorial-quote,
+.collection-description {
   display: flex;
-  align-items: center;
-  gap: 12px;
-  height: 48px;
+  justify-content: flex-end;
 }
-
-.movie-button {
-  box-sizing: border-box;
-  background-color: #f28d77;
-  border-radius: 4px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  width: 151px;
-  height: 48px;
-  padding: 0 22px;
-
-  font-family: "Noto Sans KR", sans-serif;
-  font-size: 14px;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: 0;
-  color: #241512;
-  white-space: nowrap;
-  text-decoration: none;
-}
-
-.wishlist-button {
-  box-sizing: border-box;
-  background-color: #232529;
-  border-radius: 4px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  width: 109px;
-  height: 48px;
-  padding: 0 22px;
-
-  font-family: "Noto Sans KR", sans-serif;
-  font-size: 14px;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: 0;
+.editorial-quote {
   color: #f3f1ed;
-  white-space: nowrap;
-  text-decoration: none;
-}
-
-.main-caption {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  gap: 8px;
-  right: 64px;
-  bottom: 72px;
-
-  font-family: "Noto Sans KR", sans-serif;
   font-size: 14px;
-  font-weight: 400;
-  text-align: right;
-  line-height: normal;
-  letter-spacing: 0;
-  color: #f3f1ed;
 }
-
-.main-caption small {
-  font-family: "Inter", sans-serif;
-  font-size: 10px;
-  font-weight: 400;
-  line-height: normal;
-  letter-spacing: 0.2em;
+.collection-description {
   color: #acaeb3;
+  font-size: 12px;
 }
+
 /* 콘텐츠 전체 영역 */
 .browse-content {
   max-width: 1440px;
