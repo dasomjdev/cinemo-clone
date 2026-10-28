@@ -391,13 +391,25 @@ p.project-note {
 .site-footer {
   width: 100%;
   max-width: 1440px;
-  border-top: 1px solid #303237;
+  border-top: none;
+  position: relative;
   padding: 40px 64px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 20px;
   margin: 0 auto;
+}
+
+.site-footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 100vw;
+  height: 1px;
+  background-color: #303237;
+  transform: translateX(-50%);
 }
 
 .footer-container {
