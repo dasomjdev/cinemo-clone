@@ -406,12 +406,10 @@ p.description {
 }
 .profile-option {
   width: 728px;
-  /* display: flex;
-  justify-content: space-between;
-  align-items: center; */
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 40px;
+  grid-auto-flow: row;
 }
 .profile-name {
   font-size: 18px;
@@ -422,11 +420,14 @@ p.description {
 .profile-avatar-admin {
   width: 152px;
   height: 152px;
-  background: url("../assets/images/avatar-admin.png") center / cover no-repeat;
+  background: url("../assets/images/avatar-admin.png") center / contain
+    no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
+  aspect-ratio: 1 / 1;
 }
+
 .profile-avatar-master {
   width: 152px;
   height: 152px;
@@ -864,6 +865,9 @@ p.project-note {
     align-items: flex-start;
     padding: 27px 16px;
   }
+  .site-header.underline {
+    border-bottom: 1px solid #303237;
+  }
   .header-container {
     padding: 0;
   }
@@ -1043,7 +1047,7 @@ p.project-note {
     font-size: 13px;
   }
 
-  /* profil.html의 프로필 부분 */
+  /* profile.html의 프로필 부분 */
   h2.page-title {
     font-size: 28px;
   }
@@ -1057,7 +1061,7 @@ p.project-note {
     display: none;
   }
   .profile-selection {
-    padding: 56px 24px;
+    padding: 56px 16px;
   }
   .profile-option {
     width: 100%;
