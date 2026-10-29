@@ -632,6 +632,7 @@ p.project-note {
   min-width: 0;
 }
 .movie-card a {
+  position: relative;
   display: block;
   color: inherit;
   text-decoration: none;
@@ -804,4 +805,38 @@ p.project-note {
   font-size: 11px;
   color: #f3f1ed;
   margin-top: 16px;
+}
+
+.movie-checkbox {
+  width: 28px;
+  height: 28px;
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 28px;
+  height: 28px;
+  background-color: #101113;
+  border-radius: 4px;
+  cursor: pointer;
+}
+#checkbox {
+  width: 28px;
+  height: 28px;
+  opacity: 0;
+  cursor: pointer;
+}
+.checkboximage {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 28px;
+  height: 28px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+#checkbox:checked + .checkboximage {
+  display: flex;
 }
