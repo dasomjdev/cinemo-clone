@@ -212,12 +212,12 @@ body {
 .film-actions button:last-child {
   background-color: #232529;
 }
-button.up-right-label {
+span.up-right-label {
   font-size: 14px;
   color: #241512;
 }
 
-button.plus-label {
+span.plus-label {
   font-size: 14px;
   color: #f3f1ed;
 }
