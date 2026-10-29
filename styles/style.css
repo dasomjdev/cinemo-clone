@@ -80,15 +80,13 @@ body {
 
   background-image:
     linear-gradient(to top, #101113 0%, transparent 80%),
-    url("../assets/images/Image\ quiet-orbit.webp");
+    linear-gradient(to right, #101113 0%, transparent 80%),
+    url("../assets/images/Image-quiet-orbit.webp");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-
-  background-image:
-    linear-gradient(to right, #101113 0%, transparent 80%),
-    url("../assets/images/Image\ quiet-orbit.webp");
 }
+
 .hero-content {
   display: flex;
   flex-direction: column;
@@ -148,6 +146,9 @@ body {
   font-size: 11px;
   color: #acaeb3;
   font-style: regular;
+}
+.film-metadata {
+  padding: 24px 0 0 0;
 }
 .year-and-genre {
   font-size: 12px;
@@ -241,7 +242,6 @@ p.plus-label {
   height: 98px;
   max-width: 540px;
 }
-
 .editorial-quote,
 .collection-description {
   text-align: right;
