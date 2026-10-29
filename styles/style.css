@@ -85,25 +85,22 @@ body {
 /* mypage - content */
 .intro-section {
   width: 100%;
-  max-width: 1440px;
   height: 590px;
   margin: 0 auto;
-  padding: 0 24px;
 
-  background-image:
+  background:
     linear-gradient(to top, #101113 0%, transparent 80%),
     linear-gradient(to right, #101113 0%, transparent 80%),
-    url("../assets/images/Image-quiet-orbit.webp");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+    url("../assets/images/Image-quiet-orbit.webp") center / cover no-repeat;
 }
 
 .hero-content {
+  max-width: 1440px;
   display: flex;
   flex-direction: column;
   gap: 24px;
-  padding: 104px 0 72px 0;
+  margin: 0 auto;
+  padding: 104px 24px 72px 24px;
 }
 
 .main-content {
@@ -213,10 +210,12 @@ body {
   background-color: #232529;
 }
 p.up-right-label {
+  font-size: 14px;
   color: #241512;
 }
 
 p.plus-label {
+  font-size: 14px;
   color: #f3f1ed;
 }
 
@@ -328,7 +327,7 @@ h3.profile-name {
   color: #f3f1ed;
 }
 p.profile-badge {
-  font-size: 11px;
+  font-size: 12px;
   color: #f28d77;
 }
 p.personal-caption {
@@ -398,7 +397,7 @@ h2.page-title {
 }
 p.description {
   font-size: 15px;
-  color: #f3f1ed;
+  color: #acaeb3;
 }
 .profile-option {
   width: 728px;
@@ -451,6 +450,19 @@ p.description {
   font-size: 72px;
   color: #f3f1ed;
 }
+.top-profile-avatar-spell {
+  width: 32px;
+  height: 32px;
+  background: url("../assets/images/avatar-admin.png") center / cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.top-avatar-text {
+  font-size: 15px;
+  color: #f3f1ed;
+}
+
 .profile-avatar-spell {
   width: 88px;
   height: 88px;
@@ -840,4 +852,112 @@ p.project-note {
 }
 #checkbox:checked + .checkboximage {
   display: flex;
+}
+/* 모바일 */
+@media (max-width: 767px) {
+  /* 헤더 메뉴바*/
+  .site-header {
+    height: auto;
+    align-items: flex-start;
+    padding: 27px 16px;
+  }
+  .header-container {
+    padding: 0;
+  }
+  .header-left {
+    display: block;
+  }
+
+  .editorial-aside {
+    display: none;
+  }
+  .service-list {
+    padding-top: 20px;
+    justify-content: flex-start;
+  }
+  .service-list li {
+    flex-shrink: 0;
+  }
+  .service-list li a {
+    font-size: 13px;
+    white-space: nowrap;
+  }
+  .header-right {
+    align-items: flex-start;
+  }
+  .profile-link {
+    display: none;
+  }
+  .mypage-title {
+    font-size: 30px;
+  }
+  .mypage-description {
+    font-size: 13px;
+  }
+
+  /* main page intro section*/
+  .hero-content {
+    padding: 104px 16px 72px 16px;
+  }
+  .title h2 {
+    font-size: 40px;
+  }
+  .synopsis {
+    font: 14px;
+    width: 390px;
+  }
+  .editorial-aside {
+    display: none;
+  }
+
+  /* mypage.html 프로필 변경 패널 */
+  .user-profile-panel {
+    display: block;
+  }
+  .profile-information {
+    margin-bottom: 24px;
+  }
+  .profile-avatar-spell {
+    width: 64px;
+    height: 64px;
+  }
+  h3.profile-name {
+    font-size: 22px;
+  }
+  .membership-date {
+    display: block;
+  }
+  .profile-label {
+    font-size: 13px;
+  }
+
+  /* profil.html의 프로필 부분 */
+  h2.page-title {
+    font-size: 28px;
+  }
+  p.description {
+    font-size: 13px;
+  }
+  .profile-sub-name {
+    width: 152px;
+  }
+  .profile-description {
+    display: none;
+  }
+  .profile-selection {
+    padding: 56px 24px;
+  }
+  .profile-option {
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+  }
+  .profile-option li {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  p.project-note {
+    padding-bottom: 90px;
+  }
 }
