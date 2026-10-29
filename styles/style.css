@@ -1,14 +1,12 @@
 body {
   background-color: #101113;
-  font-family: "Noto Sans KR", sans-serif;
 }
-.en {
-  font-family: "Inter", sans-serif;
-}
-
-.font-inter {
-  font-family: "Inter", sans-serif;
-}
+/* .header-container,
+.intro-section,
+.mypage-content,
+.footer-container {
+  padding: 0 40px;
+} */
 .header-container,
 .my-cinemo-content,
 .footer-container {
@@ -859,7 +857,7 @@ p.project-note {
 }
 
 @media (max-width: 768px) {
-  /* 헤더 메뉴바*/
+   /* 헤더 메뉴바*/
   .site-header {
     height: auto;
     align-items: flex-start;
@@ -901,7 +899,7 @@ p.project-note {
   .mypage-description {
     font-size: 13px;
   }
-
+  
   /* 모바일 쿼리 메인 인트로 시작*/
   .intro-section {
     box-sizing: border-box;
@@ -1077,21 +1075,21 @@ p.project-note {
     padding-bottom: 90px;
   }
 
-  /* 모바일 푸터 */
-  .site-footer {
-    width: 100%;
+/* 모바일 푸터 */
+    .site-footer {
+      width: 100%;
   }
 
-  .footer-link {
-    flex-wrap: wrap;
-    gap: 20px;
+    .footer-link {
+      flex-wrap: wrap;
+      gap: 20px;
   }
 
-  .footer-notice {
-    width: auto;
-    height: auto;
-    line-height: 1.6;
-    margin-top: 16px;
+    .footer-notice {
+      width: auto;
+      height: auto;
+      line-height: 1.6;
+      margin-top: 16px;
   }
   /* 마이페이지 계정 설정: 라벨 위 / 값 아래 */
   .account-settings {
@@ -1155,16 +1153,16 @@ p.project-note {
 }
 /* 모바일 푸터 br */
 @media (min-width: 768px) and (max-width: 1150px) {
-  .footer-break {
-    display: none;
+    .footer-break {
+      display: none;
   }
 }
 @media (min-width: 1150px) {
   .footer-break {
     display: none;
   }
-
+ 
   .footer-copyright {
-    white-space: nowrap;
+      white-space: nowrap;
   }
 }
