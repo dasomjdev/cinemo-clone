@@ -816,8 +816,7 @@ p.project-note {
 
 .setting-note {
   font-size: 11px;
-  color: #f3f1ed;
-  margin-top: 16px;
+  color: #7e8289;
 }
 
 .movie-checkbox {
@@ -853,111 +852,101 @@ p.project-note {
 #checkbox:checked + .checkboximage {
   display: flex;
 }
+
 /* 모바일 */
-@media (max-width: 767px) {
-  /* 헤더 메뉴바*/
-  .site-header {
-    height: auto;
-    align-items: flex-start;
-    padding: 27px 16px;
+@media (max-width: 768px) {
+  .synopsis {
+    width: 100%;
   }
-  .header-container {
+  .intro-section {
+    height: auto;
+    min-height: 590px;
+  }
+  .mypage-content p {
+    font-size: 11px;
+    margin-bottom: 20px;
+  }
+  .row-title {
+    margin-bottom: 8px;
+  }
+  .row-title h2 {
+    font-size: 20px;
+  }
+  .mypage-content .row-title span {
+    display: none;
+  }
+  .movie-list {
+    display: flex;
+    gap: 16px;
+    overflow-x: auto;
+    margin-right: -24px;
+    padding: 0 24px 16px 0;
+  }
+  .movie-card {
+    flex: 0 0 240px;
+  }
+  .movie-card h3 {
+    font-size: 16px;
+    margin: 12px 0 6px;
+  }
+  .movie-metadata li,
+  .favorite-content .movie-card p {
+    font-size: 11px;
+  }
+  .movie-list::-webkit-scrollbar {
+    height: 3px;
+  }
+  .movie-list::-webkit-scrollbar-track {
+    margin-right: 24px;
+    background-color: #303237;
+  }
+  .movie-list::-webkit-scrollbar-thumb {
+    background-color: #7e8289;
+    border-radius: 2px;
+  }
+  .favorite-content .movie-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px 16px;
+    overflow: visible;
+    margin-right: 0;
     padding: 0;
   }
-  .header-left {
-    display: block;
+  .movie-checkbox,
+  #checkbox,
+  .checkboximage {
+    width: 24px;
+    height: 24px;
   }
-
-  .editorial-aside {
+  .movie-checkbox {
+    top: 8px;
+    right: 8px;
+  }
+  .account-settings {
+    height: auto;
+  }
+  .setting-row {
+    grid-template-columns: 1fr auto;
+    row-gap: 4px;
+    padding: 24px 0;
+    border-top: 1px solid #303237;
+    border-bottom: 0;
+  }
+  .setting-label,
+  .setting-value {
+    grid-column: 1;
+  }
+  .setting-row a {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    align-self: center;
+    font-size: 14px;
+  }
+  .setting-value:empty {
     display: none;
   }
-  .service-list {
-    padding-top: 20px;
-    justify-content: flex-start;
-  }
-  .service-list li {
-    flex-shrink: 0;
-  }
-  .service-list li a {
-    font-size: 13px;
-    white-space: nowrap;
-  }
-  .header-right {
-    align-items: flex-start;
-  }
-  .profile-link {
-    display: none;
-  }
-  .mypage-title {
-    font-size: 30px;
-  }
-  .mypage-description {
-    font-size: 13px;
-  }
-
-  /* main page intro section*/
-  .hero-content {
-    padding: 104px 16px 72px 16px;
-  }
-  .title h2 {
-    font-size: 40px;
-  }
-  .synopsis {
-    font: 14px;
-    width: 390px;
-  }
-  .editorial-aside {
-    display: none;
-  }
-
-  /* mypage.html 프로필 변경 패널 */
-  .user-profile-panel {
-    display: block;
-  }
-  .profile-information {
-    margin-bottom: 24px;
-  }
-  .profile-avatar-spell {
-    width: 64px;
-    height: 64px;
-  }
-  h3.profile-name {
-    font-size: 22px;
-  }
-  .membership-date {
-    display: block;
-  }
-  .profile-label {
-    font-size: 13px;
-  }
-
-  /* profil.html의 프로필 부분 */
-  h2.page-title {
-    font-size: 28px;
-  }
-  p.description {
-    font-size: 13px;
-  }
-  .profile-sub-name {
-    width: 152px;
-  }
-  .profile-description {
-    display: none;
-  }
-  .profile-selection {
-    padding: 56px 24px;
-  }
-  .profile-option {
-    width: 100%;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 32px;
-  }
-  .profile-option li {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
-  p.project-note {
-    padding-bottom: 90px;
+  .setting-row:last-child {
+    border-top: 1px solid #303237;
+    border-bottom: 0;
   }
 }
