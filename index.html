@@ -11,7 +11,7 @@
   </head>
   <body>
     <header class="site-header">
-      <div class="container">
+      <div class="header-container">
         <div class="header-left">
           <a href="#" class="header-logo">
             <svg
@@ -47,7 +47,7 @@
         <!-- header-left end -->
 
         <div class="header-right">
-          <a href="#" class="user-profile">
+          <a href="./profile.html" class="user-profile">
             <div class="profile-avatar">
               <svg
                 width="32"
@@ -93,170 +93,206 @@
     </header>
 
     <main>
-      <section class="hero">
-        <img
-          class="hero-image"
-          src="../teampj/quiet-orbit.png"
-          alt="검은 구조물이 바다 위에 서 있는 영화 메인 이미지"
-          width="1440"
-          height="590"
-        />
+      <section class="intro-section">
         <div class="hero-content">
-          <ul class="editorial label">
-            <li>이번 주의 발견</li>
-            <li>VOL. 01</li>
-          </ul>
-        </div>
-        <div class="title">
-          <h2>고요의 궤도</h2>
-          <p>QUIET ORBIT</p>
-          <ul>
-            <li>2026</li>
-            <li>SF</li>
-            <li>미스터리</li>
-            <li>15+</li>
-            <li>1시간 48분</li>
-          </ul>
-        </div>
-        <p class="synopsis">
-          모든 소리가 사라진 해안, 정체를 알 수 없는 신호가 도착한다. 마지막
-          관측자는 그 고요 속으로 한 걸음 다가선다.
-        </p>
-        <div class="film-actions">
-          <button type="button">
-            <svg
-              width="18"
-              height="18"
-              viewBox="0 0 18 18"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M12.7494 12.7494V5.2506H5.25061M12.7494 5.2506L5.25061 12.7494"
-                stroke-width="1.7"
-                stroke-linecap="round"
-                stroke="#241512"
-              />
-            </svg>
-            <p class="label">작품 살펴보기</p>
-          </button>
-          <button type="button">
-            <svg
-              width="18"
-              height="18"
-              viewBox="0 0 18 18"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M3.74939 9H8.99999M8.99999 9H14.2506M8.99999 9V3.7494M8.99999 9V14.2506"
-                stroke-width="1.7"
-                stroke-linecap="round"
-                stroke="#F3F1ED"
-              />
-            </svg>
-            <p class="label">찜하기</p>
-          </button>
+          <div class="hero">
+            <div class="editorial-label">
+              <span class="collection-label">이번 주의 발견</span>
+              <span class="collection-number">VOL. 01</span>
+            </div>
+          </div>
+          <div class="title">
+            <h2 class="korean-title">고요의 궤도</h2>
+            <p class="english-title">QUIET ORBIT</p>
+            <ul class="film-metadata">
+              <li class="year-and-genre">2026</li>
+              <li class="year-and-genre">SF</li>
+              <li class="year-and-genre">미스터리</li>
+              <li class="age-rating">15+</li>
+              <li class="duration">1시간 48분</li>
+            </ul>
+          </div>
+          <p class="synopsis">
+            모든 소리가 사라진 해안, 정체를 알 수 없는 신호가 도착한다. 마지막
+            관측자는 그 고요 속으로 한 걸음 다가선다.
+          </p>
+          <div class="film-actions">
+            <button type="button">
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 18 18"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12.7494 12.7494V5.2506H5.25061M12.7494 5.2506L5.25061 12.7494"
+                  stroke-width="1.7"
+                  stroke-linecap="round"
+                  stroke="#241512"
+                />
+              </svg>
+              <p class="up-right-label">작품 살펴보기</p>
+            </button>
+            <button type="button">
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 18 18"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M3.74939 9H8.99999M8.99999 9H14.2506M8.99999 9V3.7494M8.99999 9V14.2506"
+                  stroke-width="1.7"
+                  stroke-linecap="round"
+                  stroke="#F3F1ED"
+                />
+              </svg>
+              <p class="plus-label">찜하기</p>
+            </button>
+          </div>
+          <div class="editorial-aside">
+            <p class="editorial-quote">
+              고요가 시작되는 곳, 이야기가 깨어난다.
+            </p>
+            <p class="collection-description">A CINEMO ORIGINAL CONCEPT</p>
+          </div>
         </div>
       </section>
-      <aside class="editorial-aside">
-        <p class="editorial-quote">고요가 시작되는 곳, 이야기가 깨어난다.</p>
-        <p class="collection-description">A CINEMO ORIGINAL CONCEPT</p>
-      </aside>
-    </main>
-    <main class="browse-content">
-      <section class="collection">
-        <div class="section-heading">
-          <div>
-            <h2>오늘, 새로운 세계로</h2>
-            <p>새로운 감정과 시선이 시작되는 이야기</p>
-          </div>
-          <a href="#">4편의 이야기</a>
+      <section class="mypage-content">
+        <div class="row-title">
+          <h2>오늘, 새로운 세계로</h2>
+          <span>4편의 이야기</span>
         </div>
+        <p>낯선 풍경 속에서 시작되는 네 편의 이야기</p>
 
-        <div class="list">
-          <article class="card">
-            <a href="#">
-              <img src="./image/Image quiet-orbit.png" alt="고요의 궤도" />
-              <h3>고요의 궤도</h3>
-              <p>SF · 미스터리 · 15+</p>
-            </a>
-          </article>
-
-          <article class="card">
-            <a href="#">
-              <img src="./image/Image last-platform.png" alt="마지막 승강장" />
-              <h3>마지막 승강장</h3>
-              <p>드라마 · 12+</p>
-            </a>
-          </article>
-
-          <article class="card">
-            <a href="#">
-              <img src="./image/Image blue-hour.png" alt="파란 시간" />
-              <h3>파란 시간</h3>
-              <p>로맨스 · 드라마 · 12+</p>
-            </a>
-          </article>
-
-          <article class="card">
-            <a href="#">
-              <img src="./image/Image forest-letter.png" alt="숲에서 온 편지" />
-              <h3>숲에서 온 편지</h3>
-              <p>판타지 · 드라마 · 전체</p>
-            </a>
-          </article>
-        </div>
-      </section>
-      <section class="collection">
-        <div class="section-heading">
-          <div>
-            <h2>밤이 깊어질 때</h2>
-            <p>하루의 끝에 오래 남을 조용하고 깊은 장면들</p>
-          </div>
-          <a href="#">4편의 이야기</a>
-        </div>
-
-        <div class="list">
-          <article class="card">
-            <a href="#">
-              <img src="./image/Image after-rain.png" alt="비가 그친 자리" />
-              <h3>비가 그친 자리</h3>
-              <p>드라마 · 전체</p>
-            </a>
-          </article>
-
-          <article class="card">
-            <a href="#">
-              <img src="./image/Image night-diver.png" alt="밤의 잠수부" />
-              <h3>밤의 잠수부</h3>
-              <p>스릴러 · 미스터리 · 15+</p>
-            </a>
-          </article>
-
-          <article class="card">
+        <div class="movie-list">
+          <div class="movie-card">
             <a href="#">
               <img
-                src="./image/Image forest-letter (1).png"
+                src="./assets/images/Image-quiet-orbit.webp"
+                alt="고요의 궤도"
+              />
+              <h3>고요의 궤도</h3>
+              <ul class="movie-metadata">
+                <li>SF</li>
+                <li>미스터리</li>
+                <li>15+</li>
+              </ul>
+            </a>
+          </div>
+
+          <div class="movie-card">
+            <a href="#">
+              <img
+                src="./assets/images/Image-last-platform.webp"
+                alt="마지막 승강장"
+              />
+              <h3>마지막 승강장</h3>
+              <ul class="movie-metadata">
+                <li>드라마</li>
+                <li>12+</li>
+              </ul>
+            </a>
+          </div>
+
+          <div class="movie-card">
+            <a href="#">
+              <img src="./assets/images/Image-blue-hour.webp" alt="파란 시간" />
+              <h3>파란 시간</h3>
+              <ul class="movie-metadata">
+                <li>로맨스</li>
+                <li>드라마</li>
+                <li>12+</li>
+              </ul>
+            </a>
+          </div>
+
+          <div class="movie-card">
+            <a href="#">
+              <img
+                src="./assets/images/Image-forest-letter.webp"
                 alt="숲에서 온 편지"
               />
               <h3>숲에서 온 편지</h3>
-              <p>판타지 · 드라마 · 전체</p>
+              <ul class="movie-metadata">
+                <li>판타지</li>
+                <li>드라마</li>
+                <li>전체</li>
+              </ul>
             </a>
-          </article>
+          </div>
+        </div>
+      </section>
+      <section class="mypage-content">
+        <div class="row-title">
+          <h2>밤이 깊어질 때</h2>
+          <span>4편의 이야기</span>
+        </div>
+        <p>하루의 끝에 오래 남을, 조용하고 짙은 장면들</p>
 
-          <article class="card">
+        <div class="movie-list">
+          <div class="movie-card">
             <a href="#">
-              <img src="./image/Image blue-hour (1).png" alt="파란 시간" />
-              <h3>파란 시간</h3>
-              <p>로맨스 · 드라마 · 12+</p>
+              <img
+                src="./assets/images/Image-after-rain.webp"
+                alt="비가 그친 자리"
+              />
+              <h3>비가 그친 자리</h3>
+              <ul class="movie-metadata">
+                <li>드라마</li>
+                <li>전체</li>
+              </ul>
             </a>
-          </article>
+          </div>
+
+          <div class="movie-card">
+            <a href="#">
+              <img
+                src="./assets/images/Image-night-diver.webp"
+                alt="밤의 잠수부"
+              />
+              <h3>밤의 잠수부</h3>
+              <ul class="movie-metadata">
+                <li>스릴러</li>
+                <li>미스터리</li>
+                <li>15+</li>
+              </ul>
+            </a>
+          </div>
+
+          <div class="movie-card">
+            <a href="#">
+              <img
+                src="./assets/images/Image-forest-letter.webp"
+                alt="숲에서 온 편지"
+              />
+              <h3>숲에서 온 편지</h3>
+              <ul class="movie-metadata">
+                <li>판타지</li>
+                <li>드라마</li>
+                <li>전체</li>
+              </ul>
+            </a>
+          </div>
+
+          <div class="movie-card">
+            <a href="#">
+              <img src="./assets/images/Image-blue-hour.webp" alt="파란 시간" />
+              <h3>파란 시간</h3>
+              <ul class="movie-metadata">
+                <li>로맨스</li>
+                <li>드라마</li>
+                <li>12+</li>
+              </ul>
+            </a>
+          </div>
         </div>
       </section>
     </main>
     <footer class="site-footer">
-      <div class="container">
+      <div class="footer-container">
         <ul class="footer-link">
           <li><a href="#">서비스 소개</a></li>
           <li><a href="#">이용약관</a></li>
@@ -265,8 +301,7 @@
         </ul>
 
         <p class="footer-copyright">
-          CINEMO는 학습을 위한 가상의 OTT 서비스입니다. 콘텐츠와 인물은 모두
-          허구이며 실제 <span class="payment">결제</span><span>재생</span>은
+          CINEMO는 학습을 위한 가상의 OTT 서비스입니다. 콘텐츠와 인물은 모두 허구이며 실제 <span class="payment">결제</span><span>재생</span>은
           제공하지 않습니다.
         </p>
 
