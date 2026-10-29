@@ -805,35 +805,3 @@ p.project-note {
   color: #f3f1ed;
   margin-top: 16px;
 }
-
-/* 모바일 푸터 */
-@media (max-width: 768px) {
-  .site-footer {
-    padding: 32px 16px;
-  }
-
-  .footer-container {
-    width: 100%;
-    box-sizing: border-box;
-  }
-
-  .footer-link {
-    flex-wrap: wrap;
-    gap: 20px;
-  }
-
-  .footer-copyright {
-    width: 100%;
-    height: auto;
-    line-height: 1.5;
-  }
-
-  .footer-notice {
-    width: auto;
-    height: auto;
-  }
-
-  .mobile-break {
-    display: block;
-  }
-}
