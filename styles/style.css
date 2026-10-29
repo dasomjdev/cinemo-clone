@@ -189,6 +189,7 @@ body {
   line-height: 1.85;
   color: #d2d3d5;
   width: 540px;
+  height: 60px;
 }
 .film-actions {
   display: flex;
