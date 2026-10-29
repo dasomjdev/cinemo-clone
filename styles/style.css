@@ -142,7 +142,9 @@ body {
   width: 218px;
   display: flex;
   justify-content: space-between;
+  padding: 24px 0 0 0;
 }
+
 .film-metadata li {
   display: flex;
   align-items: center;
