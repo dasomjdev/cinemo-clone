@@ -576,6 +576,10 @@ p.project-note {
   line-height: 100%;
 }
 
+.mobile-break {
+  display: inline;
+}
+
 /* 콘텐츠 전체 영역 */
 .mypage-content {
   max-width: 1440px;
